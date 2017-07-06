@@ -1,0 +1,3708 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%
+% 6.006 problem set 1
+%
+
+
+
+
+\input{macros}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% Fill these in!
+\newcommand{\theproblemsetnum}{1}
+\newcommand{\releasedate}{September 8, 2011}
+\newcommand{\partaduedate}{Thursday, September 15}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+handout
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Problem Set 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+theproblemsetnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+releasedate
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newif
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solutiontrue
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\solution}{\textbf{Your Solution:}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hrulefill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+15
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Asymptotic Practice
+\end_layout
+
+\begin_layout Standard
+For each group of functions, sort the functions in increasing order of asymptoti
+c (big-O) complexity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Group 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+f_{1}(n) & = & n^{0.999999}\log n\\
+f_{2}(n) & = & 10000000n\\
+f_{3}(n) & = & 1.000001^{n}\\
+f_{4}(n) & = & n^{2}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+With relatively simple functions, we can recognize the functions as members
+ of certain asymptotic classes, and automatically order them according to
+ class.
+ For example, 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ is linear in 
+\begin_inset Formula $n$
+\end_inset
+
+, while 
+\begin_inset Formula $f_{4}$
+\end_inset
+
+ is polynomial, so 
+\begin_inset Formula $f_{2}=O(f_{4})$
+\end_inset
+
+.
+ Any exponential function with base greater than one grows faster than any
+ polynomial function, so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $f_{4}=O(f_{3}).$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Function 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is a logarithm times a function that asymptotically approaches zero.
+ It therefore grows more slowly than a logarithm.
+ Logarithms grow more slowly than linear functions, so 
+\begin_inset Formula $f_{1}=O(f_{2})$
+\end_inset
+
+.
+ The asymptotic ordering is therefore 
+\begin_inset Formula $f_{1},f_{2},f_{4,}f_{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Group 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+f_{1}(n) & = & 2^{2^{1000000}}\\
+f_{2}(n) & = & 2^{100000n}\\
+f_{3}(n) & = & {\displaystyle \binom{n}{2}}\\
+f_{4}(n) & = & n\sqrt{n}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We'll continue to map functions to asymptotic classes.
+ Function 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is an elaborately disguised constant.
+ It's growth rate is zero.
+ Function 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ is exponential.
+ To see what class 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+ belongs to, we can to transform it, as 
+\begin_inset Formula $\text{\binom{N}{2} = \frac{N(N-1)}{2} = O(N^{2})}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+ is a second-degree polynomial.
+ For 
+\begin_inset Formula $f_{4}$
+\end_inset
+
+ we have 
+\begin_inset Formula $n\sqrt{n}=n^{\frac{3}{2}},$
+\end_inset
+
+ so 
+\begin_inset Formula $f_{4}$
+\end_inset
+
+ is a polynomial of order 
+\begin_inset Formula $\frac{3}{2}.$
+\end_inset
+
+The asymptotic ordering of these functions is therefore 
+\begin_inset Formula $f_{1},$
+\end_inset
+
+
+\begin_inset Formula $f_{4}$
+\end_inset
+
+,
+\begin_inset Formula $f_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Group 3:
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+f_{1}(n) & = & n^{\sqrt{n}}\\
+f_{2}(n) & = & 2^{n}\\
+f_{3}(n) & = & n^{10}\cdot2^{n/2}\\
+f_{4}(n) & = & {\displaystyle \sum_{i=1}^{n}(i+1)}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+If we cannot easily map functions to classes, we can calculate 
+\begin_inset Formula $\lim_{n\to\infty}\frac{f(n)}{g(n)}.$
+\end_inset
+
+ If this limit is 0, then 
+\begin_inset Formula $g=O(f).$
+\end_inset
+
+ To order 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+, write 
+\begin_inset Formula $\frac{f_{1}}{f_{2}}=\frac{n^{\sqrt{n}}}{2^{n}}=\frac{n^{\sqrt{n}}}{(2^{\sqrt{n}})^{\sqrt{n}}}=(\frac{n}{2^{\sqrt{n}}})^{\sqrt{n}}\to0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $f_{1}=O(f_{2}).$
+\end_inset
+
+ Comparing 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+, we get 
+\begin_inset Formula $\frac{f_{2}}{f_{3}}=\frac{2^{n}}{n^{10}\cdot2^{n/2}}=\frac{2^{n/2}}{n^{10}}\to\infty$
+\end_inset
+
+, so 
+\begin_inset Formula $f_{3}=O(f_{2}).$
+\end_inset
+
+ We have shown that both 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+ grow more slowly than 
+\begin_inset Formula $f_{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The limit method is harder to apply to 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+, so we will instead rewrite them into a common form that will make them
+ easier to compare.
+ Specifically, we will exponentiate both of them base 2.
+ For 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+ we get 
+\begin_inset Formula $n^{10}\cdot2^{n/2}=2^{\log_{2}(n^{10}\cdot2^{n/2})}=2^{10\cdot\log_{2}n+\frac{n}{2}}$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ we get 
+\begin_inset Formula $2^{\log_{2}(n^{\sqrt{n}})}=2^{\sqrt{n}\cdot\log_{2}n)}.$
+\end_inset
+
+The exponent of 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is 
+\begin_inset Formula $O(\sqrt{n}\cdot\log_{2}n).$
+\end_inset
+
+ The exponent for 
+\begin_inset Formula $f_{3}$
+\end_inset
+
+ is 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ Using the limit method on these functions, we get 
+\begin_inset Formula $\frac{n}{\sqrt{n}\cdot\log_{2}n}=\frac{\sqrt{n}}{\log_{2}n}\to\infty$
+\end_inset
+
+, so 
+\begin_inset Formula $f_{3}=O(f_{1})$
+\end_inset
+
+.
+ Finally, 
+\begin_inset Formula $f_{4}(n)=\sum_{i}^{n}(i+1),$
+\end_inset
+
+ which is bounded above by 
+\begin_inset Formula $n^{2},$
+\end_inset
+
+ so 
+\begin_inset Formula $f_{4}=O(n^{2})$
+\end_inset
+
+.
+ The asymptotic order is therefore 
+\begin_inset Formula $f_{4},f_{1},f_{3,}f_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+15
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Recurrence Relation Resolution
+\end_layout
+
+\begin_layout Standard
+For each of the following recurrence relations, pick the correct asymptotic
+ runtime:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Select the correct asymptotic complexity of an algorithm with runtime 
+\begin_inset Formula $T(n,n)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\begin{array}{rcll}
+T(x,c) & = & \Theta(x) & \textrm{ for \ensuremath{c\le2}},\\
+T(c,y) & = & \Theta(y) & \textrm{ for \ensuremath{c\le2}, and}\\
+T(x,y) & = & \Theta(x+y)+T(x/2,y/2).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So far in lectures and the text, recurrence relations have been strictly
+ univariate.
+ Here, and in subsequent parts of this problem, we deal with multivariate
+ recurrences.
+ This introduces an additional degree of freedom that allows, for example,
+ one input size to halve at each iteration, but another to remain constant.
+ The first recurrence does not utilize this additional freedom at all.
+ It is in fact identical to 
+\begin_inset Formula $T(n)=\theta(n)+T(n/2).$
+\end_inset
+
+ Total cost of this recurrence is 
+\begin_inset Formula $\sum_{1}^{\log_{2}n}\frac{n}{2^{i}}=\theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Select the correct asymptotic complexity of an algorithm with runtime 
+\begin_inset Formula $T(n,n)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\begin{array}{rcll}
+T(x,c) & = & \Theta(x) & \textrm{ for \ensuremath{c\le2}},\\
+T(c,y) & = & \Theta(y) & \textrm{ for \ensuremath{c\le2}, and}\\
+T(x,y) & = & \Theta(x)+T(x,y/2).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This recurrence is almost the same as part a, except here 
+\begin_inset Formula $x$
+\end_inset
+
+ is not halved at each iteration.
+ Total cost of this recurrence is 
+\begin_inset Formula $\sum_{1}^{|log_{2}n}n=\theta(n\log_{2}n)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Select the correct asymptotic complexity of an algorithm with runtime 
+\begin_inset Formula $T(n,n)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\begin{array}{rcll}
+T(x,c) & = & \Theta(x) & \textrm{ for \ensuremath{c\le2}},\\
+T(x,y) & = & \Theta(x)+S(x,y/2),\\
+S(c,y) & = & \Theta(y) & \textrm{ for \ensuremath{c\le2}, and}\\
+S(x,y) & = & \Theta(y)+T(x/2,y).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a two-step reccurence, but by substituting the second step into
+ the first, we can reduce it to a single step.
+ Substituting 
+\begin_inset Formula $S$
+\end_inset
+
+ into the expression for 
+\begin_inset Formula $T(x,y)$
+\end_inset
+
+ in line 2, we get 
+\begin_inset Formula $T(x,y)=\theta(x)+\theta(y/2)+T(x/2,y/2)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $T(n,n)=\theta(n)+T(n/2,n/2)$
+\end_inset
+
+, the same recurrence as in part a.
+ Therefore, this recurrence is also 
+\begin_inset Formula $\theta(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Peak-Finding
+\end_layout
+
+\begin_layout Standard
+In Lecture 1, you saw the peak-finding problem.
+ As a reminder, a 
+\emph on
+peak
+\emph default
+ in a matrix is a location with the property that its four neighbors (north,
+ south, east, and west) have value less than or equal to the value of the
+ peak.
+ We have posted Python code for solving this problem to the website in a
+ file called 
+\family typewriter
+ps1.zip
+\family default
+.
+ In the file 
+\family typewriter
+algorithms.py
+\family default
+, there are four different algorithms which have been written to solve the
+ peak-finding problem, only some of which are correct.
+ Your goal is to figure out which of these algorithms are correct and which
+ are efficient.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+16
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Peak-Finding Correctness
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Is 
+\family typewriter
+algorithm1
+\family default
+ correct? 
+\end_layout
+
+\begin_layout Enumerate
+Yes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(a) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(a) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Is 
+\family typewriter
+algorithm2
+\family default
+ correct? 
+\end_layout
+
+\begin_layout Enumerate
+Yes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(b) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(b) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Is 
+\family typewriter
+algorithm3
+\family default
+ correct? 
+\end_layout
+
+\begin_layout Enumerate
+Yes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(c) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(c) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Is 
+\family typewriter
+algorithm4
+\family default
+ correct? 
+\end_layout
+
+\begin_layout Enumerate
+Yes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(d) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 3(d) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+16
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Peak-Finding Efficiency
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the worst-case runtime of 
+\family typewriter
+algorithm1
+\family default
+ on a problem of size 
+\begin_inset Formula $n\times n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(a) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(a) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the worst-case runtime of 
+\family typewriter
+algorithm2
+\family default
+ on a problem of size 
+\begin_inset Formula $n\times n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(b) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(b) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the worst-case runtime of 
+\family typewriter
+algorithm3
+\family default
+ on a problem of size 
+\begin_inset Formula $n\times n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(c) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(c) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the worst-case runtime of 
+\family typewriter
+algorithm4
+\family default
+ on a problem of size 
+\begin_inset Formula $n\times n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(2^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(d) SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 4(d) SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+19
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Peak-Finding Proof
+\end_layout
+
+\begin_layout Standard
+Please modify the proof below to construct a proof of correctness for the
+ 
+\emph on
+most efficient correct algorithm
+\emph default
+ among 
+\family typewriter
+algorithm2
+\family default
+, 
+\family typewriter
+algorithm3
+\family default
+, and 
+\family typewriter
+algorithm4
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+The following is the proof of correctness for 
+\family typewriter
+algorithm1
+\family default
+, which was sketched in Lecture 1.
+\end_layout
+
+\begin_layout Quote
+We wish to show that 
+\family typewriter
+algorithm1
+\family default
+ will always return a peak, as long as the problem is not empty.
+ To that end, we wish to prove the following two statements:
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+1.
+ If the peak problem is not empty, then 
+\family typewriter
+algorithm1
+\family default
+ will always return a location.
+
+\series default
+ Say that we start with a problem of size 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+ The recursive subproblem examined by 
+\family typewriter
+algorithm1
+\family default
+ will have dimensions 
+\begin_inset Formula $m\times\lfloor n/2\rfloor$
+\end_inset
+
+ or 
+\begin_inset Formula $m\times\left(n-\lfloor n/2\rfloor-1\right)$
+\end_inset
+
+.
+ Therefore, the number of columns in the problem strictly decreases with
+ each recursive call as long as 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
+ So 
+\family typewriter
+algorithm1
+\family default
+ either returns a location at some point, or eventually examines a subproblem
+ with a non-positive number of columns.
+ The only way for the number of columns to become strictly negative, according
+ to the formulas that determine the size of the subproblem, is to have 
+\begin_inset Formula $n=0$
+\end_inset
+
+ at some point.
+ So if 
+\family typewriter
+algorithm1
+\family default
+ doesn't return a location, it must eventually examine an empty subproblem.
+\end_layout
+
+\begin_layout Quote
+We wish to show that there is no way that this can occur.
+ Assume, to the contrary, that 
+\family typewriter
+algorithm1
+\family default
+ does examine an empty subproblem.
+ Just prior to this, it must examine a subproblem of size 
+\begin_inset Formula $m\times1$
+\end_inset
+
+ or 
+\begin_inset Formula $m\times2$
+\end_inset
+
+.
+ If the problem is of size 
+\begin_inset Formula $m\times1$
+\end_inset
+
+, then calculating the maximum of the central column is equivalent to calculatin
+g the maximum of the entire problem.
+ Hence, the maximum that the algorithm finds must be a peak, and it will
+ halt and return the location.
+ If the problem has dimensions 
+\begin_inset Formula $m\times2$
+\end_inset
+
+, then there are two possibilities: either the maximum of the central column
+ is a peak (in which case the algorithm will halt and return the location),
+ or it has a strictly better neighbor in the other column (in which case
+ the algorithm will recurse on the non-empty subproblem with dimensions
+ 
+\begin_inset Formula $m\times1$
+\end_inset
+
+, thus reducing to the previous case).
+ So 
+\family typewriter
+algorithm1
+\family default
+ can never recurse into an empty subproblem, and therefore 
+\family typewriter
+algorithm1
+\family default
+ must eventually return a location.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+2.
+ If 
+\family typewriter
+algorithm1
+\family default
+ returns a location, it will be a peak in the original problem.
+
+\series default
+ If 
+\family typewriter
+algorithm1
+\family default
+ returns a location 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+, then that location must have the best value in column 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+, and must have been a peak within some recursive subproblem.
+ Assume, for the sake of contradiction, that 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+ is not also a peak within the original problem.
+ Then as the location 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+ is passed up the chain of recursive calls, it must eventually reach a level
+ where it stops being a peak.
+ At that level, the location 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+ must be adjacent to the dividing column 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ (where 
+\begin_inset Formula $|c_{1}-c_{2}|=1$
+\end_inset
+
+), and the values must satisfy the inequality 
+\begin_inset Formula $val(r_{1},c_{1})<val(r_{1},c_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+Let 
+\begin_inset Formula $(r_{2},c_{2})$
+\end_inset
+
+ be the location of the maximum value found by 
+\family typewriter
+algorithm1
+\family default
+ in the dividing column.
+ As a result, it must be that 
+\begin_inset Formula $val(r_{1},c_{2})\le val(r_{2},c_{2})$
+\end_inset
+
+.
+ Because the algorithm chose to recurse on the half containing 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+, we know that 
+\begin_inset Formula $val(r_{2},c_{2})<val(r_{2},c_{1})$
+\end_inset
+
+.
+ Hence, we have the following chain of inequalities: 
+\begin_inset Formula 
+\[
+val(r_{1},c_{1})<val(r_{1},c_{2})\le val(r_{2},c_{2})<val(r_{2},c_{1})
+\]
+
+\end_inset
+
+But in order for 
+\family typewriter
+algorithm1
+\family default
+ to return 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+ as a peak, the value at 
+\begin_inset Formula $(r_{1},c_{1})$
+\end_inset
+
+ must have been the greatest in its column, making 
+\begin_inset Formula $val(r_{1},c_{1})\ge val(r_{2},c_{1})$
+\end_inset
+
+.
+ Hence, we have a contradiction.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 5 SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Write your proof here.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 5 SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+19
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Peak-Finding Counterexamples
+\end_layout
+
+\begin_layout Standard
+For each incorrect algorithm, upload a Python file giving a counterexample
+ (i.e.
+ a matrix for which the algorithm returns a location that is not a peak).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifsolution
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+solution
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 6 SOLUTION START %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+problemMatrix = [
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0]
+\end_layout
+
+\begin_layout Verbatim
+]
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+problemMatrix = [
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0],
+\end_layout
+
+\begin_layout Verbatim
+    [0, 0, 0, 0, 0]
+\end_layout
+
+\begin_layout Verbatim
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% PROBLEM 6 SOLUTION END %%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
