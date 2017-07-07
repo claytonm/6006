@@ -1,0 +1,3596 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%
+% 6.006 problem set 2
+%
+
+
+\input{macros}
+
+\usepackage{url}
+\usepackage{clrscode3e}
+
+
+\newcommand{\answer}{
+ \par\medskip
+ \textbf{Answer:}
+}
+
+\newcommand{\collaborators}{ \textbf{Collaborators:}
+%%% COLLABORATORS START %%%
+None.
+%%% COLLABORATORS END %%%
+}
+
+\newcommand{\answerIa}{ \answer
+%%% PROBLEM 1(a) ANSWER START %%%
+0
+%%% PROBLEM 1(a) ANSWER END %%%
+}
+
+\newcommand{\answerIb}{ \answer
+%%% PROBLEM 1(b) ANSWER START %%%
+0
+%%% PROBLEM 1(b) ANSWER END %%%
+}
+
+\newcommand{\answerIc}{ \answer
+%%% PROBLEM 1(c) ANSWER START %%%
+0
+%%% PROBLEM 1(c) ANSWER END %%%
+}
+
+\newcommand{\answerId}{ \answer
+%%% PROBLEM 1(d) ANSWER START %%%
+0
+%%% PROBLEM 1(d) ANSWER END %%%
+}
+\newcommand{\answerIe}{ \answer
+%%% PROBLEM 1(e) ANSWER START %%%
+0
+%%% PROBLEM 1(e) ANSWER END %%%
+}
+\newcommand{\answerIf}{ \answer
+%%% PROBLEM 1(f) ANSWER START %%%
+0
+%%% PROBLEM 1(f) ANSWER END %%%
+}
+\newcommand{\answerIg}{ \answer
+%%% PROBLEM 1(g) ANSWER START %%%
+0
+%%% PROBLEM 1(g) ANSWER END %%%
+}
+\newcommand{\answerIh}{ \answer
+%%% PROBLEM 1(h) ANSWER START %%%
+0
+%%% PROBLEM 1(h) ANSWER END %%%
+}
+\newcommand{\answerIi}{ \answer
+%%% PROBLEM 1(i) ANSWER START %%%
+0
+%%% PROBLEM 1(i) ANSWER END %%%
+}
+\newcommand{\answerIj}{ \answer
+%%% PROBLEM 1(j) ANSWER START %%%
+0
+%%% PROBLEM 1(j) ANSWER END %%%
+}
+\newcommand{\answerIk}{ \answer
+%%% PROBLEM 1(k) ANSWER START %%%
+0
+%%% PROBLEM 1(k) ANSWER END %%%
+}
+\newcommand{\answerIl}{ \answer
+%%% PROBLEM 1(l) ANSWER START %%%
+0
+%%% PROBLEM 1(l) ANSWER END %%%
+}
+\newcommand{\answerIm}{ \answer
+%%% PROBLEM 1(m) ANSWER START %%%
+0
+%%% PROBLEM 1(m) ANSWER END %%%
+}
+\newcommand{\answerIn}{ \answer
+%%% PROBLEM 1(n) ANSWER START %%%
+0
+%%% PROBLEM 1(n) ANSWER END %%%
+}
+\newcommand{\answerIo}{ \answer
+%%% PROBLEM 1(o) ANSWER START %%%
+0
+%%% PROBLEM 1(o) ANSWER END %%%
+}
+\newcommand{\answerIp}{ \answer
+%%% PROBLEM 1(p) ANSWER START %%%
+0
+%%% PROBLEM 1(p) ANSWER END %%%
+}
+\newcommand{\answerIq}{ \answer
+%%% PROBLEM 1(q) ANSWER START %%%
+0
+%%% PROBLEM 1(q) ANSWER END %%%
+}
+\newcommand{\answerIr}{ \answer
+%%% PROBLEM 1(r) ANSWER START %%%
+0
+%%% PROBLEM 1(r) ANSWER END %%%
+}
+\newcommand{\answerIs}{ \answer
+%%% PROBLEM 1(s) ANSWER START %%%
+0
+%%% PROBLEM 1(s) ANSWER END %%%
+}
+\newcommand{\answerIt}{ \answer
+%%% PROBLEM 1(t) ANSWER START %%%
+0
+%%% PROBLEM 1(t) ANSWER END %%%
+}
+\newcommand{\answerIu}{ \answer
+%%% PROBLEM 1(u) ANSWER START %%%
+Your proof in latex.
+%%% PROBLEM 1(u) ANSWER END %%%
+}
+\newcommand{\answerIIa}{ \answer 
+%%% PROBLEM 2(a) ANSWER START %%%
+method\_name
+%%% PROBLEM 2(a) ANSWER END %%%
+}
+\newcommand{\answerIIb}{ \answer
+%%% PROBLEM 2(b) ANSWER START %%%
+0
+%%% PROBLEM 2(b) ANSWER END %%%
+}
+\newcommand{\answerIIc}{ \answer
+%%% PROBLEM 2(c) ANSWER START %%%
+0
+%%% PROBLEM 2(c) ANSWER END %%%
+}
+\newcommand{\answerIId}{ \answer
+%%% PROBLEM 2(d) ANSWER START %%%
+0
+%%% PROBLEM 2(d) ANSWER END %%%
+}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+\newcommand{\theproblemsetnum}{2}
+\newcommand{\releasedate}{September 15, 2011}
+\newcommand{\partaduedate}{Tuesday, September 27}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+handout
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Problem Set 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+theproblemsetnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+releasedate
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hrulefill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+collaborators
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+40
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Fractal Rendering
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the depth of the recursion tree for rendering a snowflake of LoD
+ 
+\begin_inset Formula $n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\log n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+At each level of the tree, the size of the problem is reduced by 1, so the
+ total depth of the tree is 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ How many nodes are there in the recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Each node in the recursion tree represents a call to 
+\begin_inset Formula $Snowflake-edge.$
+\end_inset
+
+ The tree begins with three calls to 
+\begin_inset Formula $Snowflake-edge$
+\end_inset
+
+, and at each iteration, each makes 
+\begin_inset Formula $4$
+\end_inset
+
+ recursive calls to 
+\begin_inset Formula $Snowflake-edge$
+\end_inset
+
+.
+ At each level 
+\begin_inset Formula $i$
+\end_inset
+
+ of the tree, there are therefore 
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ nodes.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (triangle count) for a node in the
+ recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{3}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A single triangle is rendered at each node, so the triangle count is constant,
+ or 
+\begin_inset Formula $\theta(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (triangle count) at each level 
+\begin_inset Formula $i$
+\end_inset
+
+ of the recursion tree, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+0 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(3^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Combining the previous two answers, each level has 
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ nodes, each with a single triangle, for a total triangle count that grows
+ as 
+\begin_inset Formula $\theta(4^{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the total asymptotic cost for the CPU, when rendering a snowflake
+ with LoD 
+\begin_inset Formula $n$
+\end_inset
+
+ using 3D hardware-accelerated rendering? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The total cost across all levels is 
+\begin_inset Formula $\sum_{i=0}^{n}4^{i}=\theta(4^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+problempart
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Second, when using 2D hardware-accelerated rendering, the surfaces' outlines
+ are broken down into open or closed paths (list of connected line segments).
+ For example, our snowflake is one closed path composed of straight lines.
+ The CPU compiles the list of coordinates in each path to be drawn, and
+ sends it to the GPU, which renders the final image.
+ This approach is also used for talking to high-end toys such as laser cutters
+ and plotters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the depth of the recursion tree for rendering a snowflake of LoD
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ using 2D hardware-accelerated rendering? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\log n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The subproblem size is still reduced by one at each level, so the height
+ is still 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ How many nodes are there in the recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Again, the shape of tree has not changed, so this answer is still 
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment count) for a node in
+ the recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{3}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Lines are not rendered until after all triangles has been computed, so node
+ costs at intermediate levels is 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment count) for a node in
+ the last level 
+\begin_inset Formula $n$
+\end_inset
+
+ of the recursion tree? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{9}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The number of triangles, and hence the number of line segments, is 
+\begin_inset Formula $\theta(1).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment count) at each level
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ of the recursion tree, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+0 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(3^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The cost at each node is 0, so the total cost is 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment count) at the last
+ level 
+\begin_inset Formula $n$
+\end_inset
+
+ in the recursion tree? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+There are 
+\begin_inset Formula $\theta(4^{n})$
+\end_inset
+
+ nodes that cost 
+\begin_inset Formula $\theta(1)$
+\end_inset
+
+ each, for a total cost of 
+\begin_inset Formula $\theta(4^{n}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the total asymptotic cost for the CPU, when rendering a snowflake
+ with LoD 
+\begin_inset Formula $n$
+\end_inset
+
+ using 2D hardware-accelerated rendering? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+All cost is concentrated in the final level, so the total cost is 
+\begin_inset Formula $\theta(4^{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+problempart
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Third, in 2D rendering without a hardware accelerator (also called software
+ rendering), the CPU compiles a list of line segments for each path like
+ in the previous part, but then it is also responsible for 
+\begin_inset Quotes eld
+\end_inset
+
+rasterizing
+\begin_inset Quotes erd
+\end_inset
+
+ each line segment.
+ Rasterizing takes the coordinates of the segment's endpoints and computes
+ the coordinates of all the pixels that lie on the line segment.
+ Changing the colors of these pixels effectively draws the line segment
+ on the display.
+ We know an algorithm to rasterize a line segment in time proportional to
+ the length of the segment.
+ It is easy to see that this algorithm is optimal, because the number of
+ pixels on the segment is proportional to the segment's length.
+ Throughout this problem, assume that all line segments have length at least
+ one pixel, so that the cost of rasterizing is greater than the cost of
+ compiling the line segments.
+\end_layout
+
+\begin_layout Standard
+It might be interesting to note that the cost of 2D software rendering is
+ proportional to the total length of the path, which is also the power required
+ to cut the path with a laser cutter, or the amount of ink needed to print
+ the path on paper.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the depth of the recursion tree for rendering a snowflake of LoD
+ 
+\begin_inset Formula $n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\log n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4\,n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The recursion tree does not change, so height is still n.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ How many nodes are there in the recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4^{i+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Number of nodes at level 
+\begin_inset Formula $i$
+\end_inset
+
+ is still 
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment length) for a node
+ in the recursion tree at level 
+\begin_inset Formula $i$
+\end_inset
+
+, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? Assume that the sides of the initial triangle have length 1.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{3}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Line segments are not rendered until the last level, so rendering time is
+ 0 for 
+\begin_inset Formula $i<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment length) for a node
+ in the last level 
+\begin_inset Formula $n$
+\end_inset
+
+ of the recursion tree? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{9}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{1}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Line segments are divided by three at each level, but the number of triangles,
+ and hence segments, is constant, so the total segment length at each node
+ is 
+\begin_inset Formula $\theta(\frac{1}{3}^{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment length) at each level
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ of the recursion tree, for 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+0 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{9}^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(3^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Nodes are not rendered until final level, so rendering time is 0 for 
+\begin_inset Formula $i<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the asymptotic rendering time (line segment length) at the last
+ level 
+\begin_inset Formula $n$
+\end_inset
+
+ in the recursion tree? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Number of nodes grow by 
+\begin_inset Formula $\theta(4^{i}),$
+\end_inset
+
+ and line length per node grows by 
+\begin_inset Formula $\theta(\frac{1}{3}^{i})$
+\end_inset
+
+, so total rendering time grows as 
+\begin_inset Formula $\theta(\frac{4}{3}^{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the total asymptotic cost for the CPU, when rendering a snowflake
+ with LoD 
+\begin_inset Formula $n$
+\end_inset
+
+ using 2D software (not hardware-accelerated) rendering? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+All costs are incurred at the final level, so total costs are 
+\begin_inset Formula $\theta(\frac{4}{3}^{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+problempart
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The fourth and last case we consider is 3D rendering without hardware accelerati
+on.
+ In this case, the CPU compiles a list of triangles, and then rasterizes
+ each triangle.
+ We know an algorithm to rasterize a triangle that runs in time proportional
+ to the triangle's surface area.
+ This algorithm is optimal, because the number of pixels inside a triangle
+ is proportional to the triangle's area.
+ For the purpose of this problem, you can assume that the area of a triangle
+ with side length 
+\begin_inset Formula $l$
+\end_inset
+
+ is 
+\begin_inset Formula $\Theta(l^{2})$
+\end_inset
+
+.
+ We also assume that the cost of rasterizing is greater than the cost of
+ compiling the line segments.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ What is the total asymptotic cost of rendering a snowflake with LoD 
+\begin_inset Formula $n$
+\end_inset
+
+? Assume that initial triangle's side length is 1.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(\frac{4}{3}^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Theta(4^{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The total area of the snowflake never exceeds the area of the original triangle,
+ so total asymptotic cost is 
+\begin_inset Formula $\theta(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+15
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Write a succinct proof for your answer using the recursion-tree method.
+ 
+\end_layout
+
+\begin_layout Standard
+Total rendering time grows proportional to the total area of all triangles
+ at all levels.
+ At level 
+\begin_inset Formula $i$
+\end_inset
+
+, there are 
+\begin_inset Formula $3\cdot4^{i}$
+\end_inset
+
+ triangles, and each triangle has area 
+\begin_inset Formula $\frac{1}{3}^{2i}=\frac{1}{9}^{i}$
+\end_inset
+
+.
+ The total area over all levels is therefore 
+\begin_inset Formula 
+\[
+3\cdot\sum_{i=0}^{n}(\frac{4}{9}^{i})<3\cdot\sum_{i=0}^{\infty}(\frac{1}{2}^{i})=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the total asymptotic rendering time is 
+\begin_inset Formula $\theta(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problem
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+60
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Digital Circuit Simulation
+\end_layout
+
+\begin_layout Standard
+Your 6.006 skills landed you a nice internship at the chip manufacturer AMDtel.
+ Their hardware verification team has been complaining that their circuit
+ simulator is slow, and your manager decided that your algorithmic chops
+ make you the perfect candidate for optimizing the simulator.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+defn
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+combinational circuit
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ is made up of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+defn
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+gates
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, which are devices that take Boolean (
+\begin_inset Formula $\mathsf{True}$
+\end_inset
+
+ / 1 and 
+\begin_inset Formula $\mathsf{False}$
+\end_inset
+
+ / 0) input signals, and output a signal that is a function of the input
+ signals.
+ Gates take some time to compute their functions, so a gate's output at
+ time 
+\begin_inset Formula $\tau$
+\end_inset
+
+ reflects the gate's inputs at time 
+\begin_inset Formula $\tau-\delta$
+\end_inset
+
+, where 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is the gate's delay.
+ For the purposes of this simulator, a gate's output transitions between
+ 0 and 1 instantly.
+ Gates' output terminals are connected to other gates' inputs terminals
+ by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+defn
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+wires
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ that propagate the signal instantly without altering it.
+\end_layout
+
+\begin_layout Standard
+For example, a 2-input 
+\begin_inset Formula $\mathsf{XOR}$
+\end_inset
+
+ gate with inputs A and B (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xor"
+
+\end_inset
+
+) with a 2 nanosecond (ns) delay works as follows:
+\end_layout
+
+\begin_layout Standard
+The circuit simulator takes an input file that describes a circuit layout,
+ including gates' delays, probes (indicating the gates that we want to monitor
+ the output), and external inputs.
+ It then simulates the transitions at the output terminals of all the gates
+ as time progresses.
+ It also outputs transitions at the probed gates in the order of the timing
+ of those transitions.
+\end_layout
+
+\begin_layout Standard
+This problem will walk you through the best known approach for fixing performanc
+e issues in a system.
+ You will profile the code, find the performance bottleneck, understand
+ the reason behind it, and remove the bottleneck by optimizing the code.
+\end_layout
+
+\begin_layout Standard
+To start working with AMDtel's circuit simulation source code, download
+ and unpack the problem set's 
+\family typewriter
+.zip
+\family default
+ archive, and go to the 
+\family typewriter
+circuit/
+\family default
+ directory.
+\end_layout
+
+\begin_layout Standard
+The circuit simulator is in 
+\family typewriter
+circuit.py
+\family default
+.
+ The AMDtel engineers pointed out that the simulation input in 
+\family typewriter
+tests/5devadas13.in
+\family default
+ takes too long to run.
+ We have also provided an automated test suite at 
+\family typewriter
+test-circuit.py
+\family default
+, together with other simulation inputs.
+ You can ignore these files until you get to the last part of the problem
+ set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Run the code under the python profiler with the command below, and identify
+ the method that takes up most of the CPU time.
+ If two methods have similar CPU usage times, ignore the simpler one.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+python -m cProfile -s time circuit.py < tests/5devadas13.in
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Warning:
+\shape default
+ the command above can take 15-30 minutes to complete, and bring the CPU
+ usage to 100% on one of your cores.
+ Plan accordingly.
+\end_layout
+
+\begin_layout Standard
+What is the name of the method with the highest CPU usage? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+answerIIa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% CLI from http://docs.python.org/library/profile.html
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Sorting keys at http://docs.python.org/library/profile.html#profile-stats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+6
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ How many times is the method called? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+answerIIb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ The class containing the troublesome method is implementing a familiar
+ data structure.
+ What is the tightest asymptotic bound for the worst-case running time of
+ the method that contains the bottleneck? Express your answer in terms of
+ 
+\begin_inset Formula $n$
+\end_inset
+
+, the number of elements in the data structure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+answerIIc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ If the data structure were implemented using the most efficient method
+ we learned in class, what would be the tightest asymptotic bound for the
+ worst-case running time of the method discussed in the questions above?
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n\log n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n\log^{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+answerIId
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+problempart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+points
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+30
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Rewrite the data structure class using the most efficient method we learned
+ in class.
+ 
+\series bold
+Please note that you are not allowed to import any additional Python libraries
+ and our test will check this.
+\end_layout
+
+\begin_layout Standard
+We have provided a few tests to help you check your code's correctness and
+ speed.
+ The test cases are in the 
+\family typewriter
+tests/
+\family default
+ directory.
+ 
+\family typewriter
+tests/README.txt
+\family default
+ explains the syntax of the simulator input files.
+ You can use the following command to run all the tests.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+python circuit_test.py
+\end_layout
+
+\begin_layout Standard
+To work on a single test case, run the simulator on the test case with the
+ following command.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+python circuit.py < tests/1gate.in > out
+\end_layout
+
+\begin_layout Standard
+Then compare your output with the correct output for the test case.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+diff out tests/1gate.gold
+\end_layout
+
+\begin_layout Standard
+For Windows, use 
+\family typewriter
+fc
+\family default
+ to compare files.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+fc out tests/1gate.gold
+\end_layout
+
+\begin_layout Standard
+We have implemented a visualizer for your output, to help you debug your
+ code.
+ To use the visualizer, first produce a simulation trace.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+TRACE=jsonp python circuit.py < tests/1gate.in > circuit.jsonp
+\end_layout
+
+\begin_layout Standard
+On Windows, use the following command instead.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+circuit_jsonp.bat < tests/1gate.in > circuit.jsonp
+\end_layout
+
+\begin_layout Standard
+Then use Google Chrome to open 
+\family typewriter
+visualizer/bin/visualizer.html
+\end_layout
+
+\begin_layout Standard
+We recommend using the small test cases numbered 1 through 4 to check your
+ implementation's correctness, and then use test case 5 to check the code's
+ speed.
+\end_layout
+
+\begin_layout Standard
+When your code passes all tests, and runs reasonably fast (the tests should
+ complete in less than 30 seconds on any reasonably recent computer), upload
+ your modified 
+\family typewriter
+circuit.py
+\family default
+ to the course submission site.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+answer
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ Please upload 
+\family typewriter
+circuit.py
+\family default
+ with your modifications separately.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problemparts}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{problems}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
