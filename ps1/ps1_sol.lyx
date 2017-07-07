@@ -1628,7 +1628,7 @@ Peak-Finding Correctness
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1697,16 +1697,6 @@ algorithm1
  correct? 
 \end_layout
 
-\begin_layout Enumerate
-Yes.
- 
-\end_layout
-
-\begin_layout Enumerate
-No.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -1746,11 +1736,11 @@ status collapsed
 
  
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(a) SOLUTION START %%%
+%%% PROBLEM 4(a) SOLUTION START %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -1759,13 +1749,15 @@ status collapsed
 
 \end_inset
 
-1 
+Yes.
+ This algorithm was covered in Lecture.
+ 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(a) SOLUTION END %%%
+%%% PROBLEM 4(a) SOLUTION END %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -1776,7 +1768,7 @@ status collapsed
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1845,16 +1837,6 @@ algorithm2
  correct? 
 \end_layout
 
-\begin_layout Enumerate
-Yes.
- 
-\end_layout
-
-\begin_layout Enumerate
-No.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -1887,18 +1869,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-{}
-\end_layout
-
-\end_inset
-
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%%% PROBLEM 3(b) SOLUTION START %%%
+%%% PROBLEM 4(a) SOLUTION START %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -1907,13 +1878,22 @@ status collapsed
 
 \end_inset
 
-1 
+Yes.
+ Every iteration selects a grid location with a higher value than the previous
+ location, unless there is none, in which case the current location is a
+ peak, and is returned.
+ The grid is finite, so this process must terminate at at a grid element
+ with a higher value than any previously visited.
+ This element is a peak.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(b) SOLUTION END %%%
+%%% PROBLEM 4(a) SOLUTION END %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -1993,16 +1973,6 @@ algorithm3
  correct? 
 \end_layout
 
-\begin_layout Enumerate
-Yes.
- 
-\end_layout
-
-\begin_layout Enumerate
-No.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -2046,7 +2016,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(c) SOLUTION START %%%
+%%% PROBLEM 4(a) SOLUTION START %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2055,13 +2025,18 @@ status collapsed
 
 \end_inset
 
-1 
+No.
+ See counter-example file, counterexample.py.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(c) SOLUTION END %%%
+%%% PROBLEM 4(a) SOLUTION END %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2072,7 +2047,7 @@ status collapsed
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2141,16 +2116,6 @@ algorithm4
  correct? 
 \end_layout
 
-\begin_layout Enumerate
-Yes.
- 
-\end_layout
-
-\begin_layout Enumerate
-No.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -2194,7 +2159,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(d) SOLUTION START %%%
+%%% PROBLEM 4(a) SOLUTION START %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2203,13 +2168,17 @@ status collapsed
 
 \end_inset
 
-1 
+Yes.
+ See proof in next problem.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-%%% PROBLEM 3(d) SOLUTION END %%%
+%%% PROBLEM 4(a) SOLUTION END %%%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2236,7 +2205,7 @@ fi
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2378,54 +2347,6 @@ algorithm1
 ? 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log^{2}n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n^{2})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(2^{n})$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -2478,7 +2399,33 @@ status collapsed
 
 \end_inset
 
-1 
+Worst-case runtime is 
+\begin_inset Formula $\theta(n\log n)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of rows and columns, and 
+\begin_inset Formula $T(r,c)$
+\end_inset
+
+ is the running time on a matrix of 
+\begin_inset Formula $r$
+\end_inset
+
+ rows and 
+\begin_inset Formula $c$
+\end_inset
+
+ columns, respectively, then the recurrence for this algorithm is 
+\begin_inset Formula $T(n,n)=\theta(n)+T(n,n/2).$
+\end_inset
+
+ We solved this recurrence in Problem 2.
+ 
 \begin_inset ERT
 status collapsed
 
@@ -2568,54 +2515,6 @@ algorithm2
 ? 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log^{2}n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n^{2})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(2^{n})$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -2668,7 +2567,28 @@ status collapsed
 
 \end_inset
 
-1 
+Worst-case runtime is 
+\begin_inset Formula $\theta(n^{2})$
+\end_inset
+
+.
+ In the worst-case, the algorithm visits every cell, and there are 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ cells in an 
+\begin_inset Formula $n$
+\end_inset
+
+ by 
+\begin_inset Formula $n$
+\end_inset
+
+ matrix.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
@@ -2758,54 +2678,6 @@ algorithm3
 ? 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log^{2}n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n^{2})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(2^{n})$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -2858,7 +2730,28 @@ status collapsed
 
 \end_inset
 
-1 
+Worst-case runtime is 
+\begin_inset Formula $\theta(n)$
+\end_inset
+
+.
+ On a problem with 
+\begin_inset Formula $n$
+\end_inset
+
+rows and 
+\begin_inset Formula $n$
+\end_inset
+
+columns, the recurrence for this problem is 
+\begin_inset Formula $T(n,n)=\theta(n/2,n/2)+T(n/2,n/2)$
+\end_inset
+
+.
+ We solved this recurrent in problem 2.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
@@ -2948,54 +2841,6 @@ algorithm4
 ? 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n\log^{2}n)$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(n^{2})$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Theta(2^{n})$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
@@ -3048,7 +2893,16 @@ status collapsed
 
 \end_inset
 
-1 
+Worst-case runtime is 
+\begin_inset Formula $\theta(n)$
+\end_inset
+
+.
+ Reasoning is same as previous problem.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
@@ -3204,7 +3058,7 @@ algorithm1
 .
  The recursive subproblem examined by 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  will have dimensions 
 \begin_inset Formula $m\times\lfloor n/2\rfloor$
@@ -3214,28 +3068,45 @@ algorithm1
 \begin_inset Formula $m\times\left(n-\lfloor n/2\rfloor-1\right)$
 \end_inset
 
-.
- Therefore, the number of columns in the problem strictly decreases with
- each recursive call as long as 
+, if the split is made row-wise, or 
+\begin_inset Formula $\left\lfloor m/2\right\rfloor \times\lfloor n\rfloor$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(m-\lfloor m/2\rfloor-1\right)\times n$
+\end_inset
+
+ if the split is made column-wise.
+ Therefore, the number of columns or rows in the problem strictly decreases
+ with each recursive call as long as 
 \begin_inset Formula $n>0$
+\end_inset
+
+ or 
+\begin_inset Formula $m>0$
 \end_inset
 
 .
  So 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  either returns a location at some point, or eventually examines a subproblem
- with a non-positive number of columns.
- The only way for the number of columns to become strictly negative, according
- to the formulas that determine the size of the subproblem, is to have 
+ with a non-positive number of columns or columns.
+ The only way for the number of columns or rows to become strictly negative,
+ according to the formulas that determine the size of the subproblem, is
+ to have 
 \begin_inset Formula $n=0$
+\end_inset
+
+ or 
+\begin_inset Formula $m=0$
 \end_inset
 
  at some point.
  So if 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  doesn't return a location, it must eventually examine an empty subproblem.
 \end_layout
@@ -3244,7 +3115,7 @@ algorithm1
 We wish to show that there is no way that this can occur.
  Assume, to the contrary, that 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  does examine an empty subproblem.
  Just prior to this, it must examine a subproblem of size 
@@ -3253,6 +3124,14 @@ algorithm1
 
  or 
 \begin_inset Formula $m\times2$
+\end_inset
+
+ or 
+\begin_inset Formula $1\times n$
+\end_inset
+
+ or 
+\begin_inset Formula $2\times n$
 \end_inset
 
 .
@@ -3277,13 +3156,22 @@ g the maximum of the entire problem.
 \end_inset
 
 , thus reducing to the previous case).
+ The argument is exactly the same for the cases 
+\begin_inset Formula $1\times n$
+\end_inset
+
+ or 
+\begin_inset Formula $2\times n$
+\end_inset
+
+.
  So 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  can never recurse into an empty subproblem, and therefore 
 \family typewriter
-algorithm1
+algorithm4
 \family default
  must eventually return a location.
 \end_layout
@@ -3311,6 +3199,10 @@ algorithm1
 \begin_inset Formula $c_{1}$
 \end_inset
 
+ or 
+\begin_inset Formula $r_{1}$
+\end_inset
+
 , and must have been a peak within some recursive subproblem.
  Assume, for the sake of contradiction, that 
 \begin_inset Formula $(r_{1},c_{1})$
@@ -3331,15 +3223,23 @@ algorithm1
 \begin_inset Formula $c_{2}$
 \end_inset
 
+ or dividing row 
+\begin_inset Formula $r_{2}$
+\end_inset
+
  (where 
 \begin_inset Formula $|c_{1}-c_{2}|=1$
+\end_inset
+
+ or 
+\begin_inset Formula $|r_{1}-r_{2}|=1$
 \end_inset
 
 ), and the values must satisfy the inequality 
 \begin_inset Formula $val(r_{1},c_{1})<val(r_{1},c_{2})$
 \end_inset
 
-.
+, and similarly for a dividing row.
 \end_layout
 
 \begin_layout Quote
@@ -3349,9 +3249,10 @@ Let
 
  be the location of the maximum value found by 
 \family typewriter
-algorithm1
+algorithm4
 \family default
- in the dividing column.
+ in the dividing column or row.
+ Assume for the rest of this argument, that it is a dividing column.
  As a result, it must be that 
 \begin_inset Formula $val(r_{1},c_{2})\le val(r_{2},c_{2})$
 \end_inset
@@ -3598,62 +3499,37 @@ status collapsed
 \end_layout
 
 \begin_layout Verbatim
+
 problemMatrix = [
 \end_layout
 
 \begin_layout Verbatim
+
     [0, 0, 0, 0, 0],
 \end_layout
 
 \begin_layout Verbatim
-    [0, 0, 0, 0, 0],
+
+    [0, 0, 9, 10, 0],
 \end_layout
 
 \begin_layout Verbatim
-    [0, 0, 0, 0, 0],
+
+    [0, 0, 8, 0, 0],
 \end_layout
 
 \begin_layout Verbatim
-    [0, 0, 0, 0, 0],
+
+    [0, 0, 7, 0, 0],
 \end_layout
 
 \begin_layout Verbatim
+
     [0, 0, 0, 0, 0]
 \end_layout
 
 \begin_layout Verbatim
-]
-\end_layout
 
-\begin_layout Verbatim
-
-\end_layout
-
-\begin_layout Verbatim
-problemMatrix = [
-\end_layout
-
-\begin_layout Verbatim
-    [0, 0, 0, 0, 0],
-\end_layout
-
-\begin_layout Verbatim
-    [0, 0, 0, 0, 0],
-\end_layout
-
-\begin_layout Verbatim
-    [0, 0, 0, 0, 0],
-\end_layout
-
-\begin_layout Verbatim
-    [0, 0, 0, 0, 0],
-\end_layout
-
-\begin_layout Verbatim
-    [0, 0, 0, 0, 0]
-\end_layout
-
-\begin_layout Verbatim
 ]
 \end_layout
 
