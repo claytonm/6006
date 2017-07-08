@@ -342,6 +342,7 @@ class Transition:
 class PriorityQueue:
     """
     Array-based priority queue implementation.
+    Problem set involves rewriting this class to implement a min-heap.
     """
 
     def __init__(self):
