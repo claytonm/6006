@@ -1,0 +1,545 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%
+% 6.006 problem set 2
+%
+
+
+\input{macros}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{clrscode3e}
+
+
+\newcommand{\answer}{
+ \par\medskip
+ \textbf{Answer:}
+}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+\newcommand{\theproblemsetnum}{3}
+\newcommand{\releasedate}{September 29, 2011}
+\newcommand{\partaduedate}{Tuesday, October 5}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+handout
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Problem Set 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+theproblemsetnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+releasedate
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problem 3-1
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a) Answer: 
+\series default
+Min- and max-heaps enable constant-time retrieval of their min and max elements,
+ respectively, but finding the maximum element in a min-heap or the minimum
+ element in a max heap is 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ BSTs allow for 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ retrieval of both the minimum and maximum element, but only if they are
+ balanced.
+ In the case of extremely unbalanced trees, these operations are 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ AVL trees are balanced BSTs that enable retrieval of both minimum and maximum
+ elements in 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ time, so the answer is AVL.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) Answer: 
+\series default
+Insertion into an AVL tree takes 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c) Answer: 
+\series default
+Retrieving the minimum key an AVL tree takes 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d) Answer: 
+\series default
+Retrieving the maximum key an AVL tree takes 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(e) Answer: 
+\begin_inset Formula $Rank(h)-Rank(l)+1$
+\end_inset
+
+
+\series default
+.
+ Just imagine an array 
+\begin_inset Formula $1,2,3,4,5$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $Count(3,5)=3$
+\end_inset
+
+, 
+\begin_inset Formula $Rank(5)=5$
+\end_inset
+
+ and 
+\begin_inset Formula $Rank(3)=3$
+\end_inset
+
+, so 
+\begin_inset Formula $Count(3,5)=Rank(5)-Rank(3)+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(f) Answer: 
+\begin_inset Formula $Rank(h)-Rank(l)$
+\end_inset
+
+
+\series default
+.
+ If we remove 
+\begin_inset Formula $3$
+\end_inset
+
+ from the previous array, we have 
+\begin_inset Formula $1,2,4,5$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $Count(3,5)=2$
+\end_inset
+
+, 
+\begin_inset Formula $Rank(5)=4$
+\end_inset
+
+ and 
+\begin_inset Formula $Rank(3)=2$
+\end_inset
+
+, so 
+\begin_inset Formula $Count(3,5)=Rank(5)-Rank(3)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(g).
+ Answer: 
+\begin_inset Formula $Rank(h)-Rank(l)$
+\end_inset
+
+
+\series default
+.
+ If we remove 
+\begin_inset Formula $5$
+\end_inset
+
+ from the original array, we have 
+\begin_inset Formula $1,2,3,4$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $Count(3,5)=2$
+\end_inset
+
+, 
+\begin_inset Formula $Rank(5)=4$
+\end_inset
+
+ and 
+\begin_inset Formula $Rank(3)=3$
+\end_inset
+
+, so 
+\begin_inset Formula $Count(3,5)=Rank(5)-Rank(3)+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(h).
+ Answer.
+ 
+\begin_inset Formula $Rank(h)-Rank(l)$
+\end_inset
+
+.
+ 
+\series default
+If we remove both 3 and 5 from the original array, we end up with 
+\begin_inset Formula $1,2,4$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $Count(3,5)=1$
+\end_inset
+
+, 
+\begin_inset Formula $Rank(5)=3$
+\end_inset
+
+ and 2, so 
+\begin_inset Formula $Count(3,5)=Rank(5)-Rank(3)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(i).
+ Answer.
+ 
+\series default
+Choice 4, the number of nodes in the subtree rooted at 
+\begin_inset Formula $node$
+\end_inset
+
+.
+ This information can be updated in constant time as 
+\begin_inset Formula $node.left.\gamma+node.right.\gamma+1$
+\end_inset
+
+.
+ In addition, this information can be used to calculate rank of 
+\begin_inset Formula $node$
+\end_inset
+
+.
+ To do so, initialize 
+\begin_inset Formula $rank=node.left.\gamma$
+\end_inset
+
+ if 
+\begin_inset Formula $node.left$
+\end_inset
+
+ exists, otherwise initialize 
+\begin_inset Formula $rank=1$
+\end_inset
+
+.
+ Then travel up the three from 
+\begin_inset Formula $node$
+\end_inset
+
+.
+ Anytime you go left up the tree to a parent node 
+\begin_inset Formula $parent_{L}$
+\end_inset
+
+, increment 
+\begin_inset Formula $rank$
+\end_inset
+
+ by 
+\begin_inset Formula $parent.left.\gamma+1$
+\end_inset
+
+.
+ Stop when you reach the root.
+ This take time 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(j).
+ Answer: 
+\series default
+You need 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ bits to store a number between 0 and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(k).
+ Answer: 
+\series default
+A leaf node as 
+\begin_inset Formula $\gamma=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(l).
+ Answer: 
+\series default
+
+\begin_inset Formula $N_{3}.\gamma=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(m).
+ Answer: 
+\begin_inset Formula $N_{2}.\gamma=6$
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(n).
+ Answer: 
+\series default
+
+\begin_inset Formula $N_{1}.\gamma=10$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
