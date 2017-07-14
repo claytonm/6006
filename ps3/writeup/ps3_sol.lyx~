@@ -342,8 +342,7 @@ Retrieving the maximum key an AVL tree takes
 \begin_layout Standard
 
 \series bold
-(g).
- Answer: 
+(g) Answer: 
 \begin_inset Formula $Rank(h)-Rank(l)$
 \end_inset
 
@@ -381,8 +380,7 @@ Retrieving the maximum key an AVL tree takes
 \begin_layout Standard
 
 \series bold
-(h).
- Answer.
+(h) Answer.
  
 \begin_inset Formula $Rank(h)-Rank(l)$
 \end_inset
@@ -413,8 +411,7 @@ If we remove both 3 and 5 from the original array, we end up with
 \begin_layout Standard
 
 \series bold
-(i).
- Answer.
+(i) Answer.
  
 \series default
 Choice 4, the number of nodes in the subtree rooted at 
@@ -475,8 +472,7 @@ Choice 4, the number of nodes in the subtree rooted at
 \begin_layout Standard
 
 \series bold
-(j).
- Answer: 
+(j) Answer: 
 \series default
 You need 
 \begin_inset Formula $O(log_{2}n)$
@@ -492,8 +488,7 @@ You need
 \begin_layout Standard
 
 \series bold
-(k).
- Answer: 
+(k) Answer: 
 \series default
 A leaf node as 
 \begin_inset Formula $\gamma=1$
@@ -505,8 +500,7 @@ A leaf node as
 \begin_layout Standard
 
 \series bold
-(l).
- Answer: 
+(l) Answer: 
 \series default
 
 \begin_inset Formula $N_{3}.\gamma=3$
@@ -518,8 +512,7 @@ A leaf node as
 \begin_layout Standard
 
 \series bold
-(m).
- Answer: 
+(m) Answer: 
 \begin_inset Formula $N_{2}.\gamma=6$
 \end_inset
 
@@ -531,14 +524,400 @@ A leaf node as
 \begin_layout Standard
 
 \series bold
-(n).
- Answer: 
+(n) Answer: 
 \series default
 
 \begin_inset Formula $N_{1}.\gamma=10$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(o) Answer: 
+\series default
+
+\begin_inset Formula $Insert$
+\end_inset
+
+ and 
+\begin_inset Formula $Delete$
+\end_inset
+
+ only needs to satisfy the 
+\begin_inset Formula $BST$
+\end_inset
+
+ property, so they do not need to be modified.
+ But once a node is inserted or deleted, separate procedures, namely 
+\begin_inset Formula $Rebalance$
+\end_inset
+
+, 
+\begin_inset Formula $Left-Rotate$
+\end_inset
+
+, and 
+\begin_inset Formula $Right-Rotate$
+\end_inset
+
+, are called to maintain the 
+\begin_inset Formula $AVL$
+\end_inset
+
+ property.
+ These procedures can modify the tree in ways that change the value of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, and so must be modified to maintain both the 
+\begin_inset Formula $AVL$
+\end_inset
+
+ property and the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ rep invariant.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(p) Answer: 
+\begin_inset Formula $Rank$
+\end_inset
+
+ 
+\series default
+is similar to 
+\begin_inset Formula $Insert$
+\end_inset
+
+ or 
+\begin_inset Formula $Delete$
+\end_inset
+
+ .
+ It travels down the 
+\begin_inset Formula $AVL$
+\end_inset
+
+ tree until if finds the location in the tree that corresponds to a given
+ value.
+ Like those procedures, its running time is bounded by the height of the
+ tree, which is 
+\series bold
+
+\begin_inset Formula $O(log_{2}N)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(q) Answer: 
+\series default
+The procedure 
+\begin_inset Formula $LCA$
+\end_inset
+
+ takes in a tree, a lower value 
+\begin_inset Formula $l$
+\end_inset
+
+, and a higher value 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ It travels down the tree until it reaches a node whose key is between 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ .
+ It then returns this node.
+ If no such node exists, it returns null.
+ If you visualize this process, you'll see that this finds the lowest common
+ ancestor in the tree.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(r) Answer: 
+\series default
+At most, 
+\begin_inset Formula $LCA$
+\end_inset
+
+ has to traverse down the entire tree.
+ This takes 
+\begin_inset Formula $O(log_{2}n)$
+\end_inset
+
+ in a balanced 
+\begin_inset Formula $AVL$
+\end_inset
+
+ tree.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(s) Anwer: 
+\begin_inset Formula $Node-List$
+\end_inset
+
+ 
+\series default
+is called for each of the 
+\begin_inset Formula $L$
+\end_inset
+
+ nodes added.
+ Running time is 
+\begin_inset Formula $O(1)+O(L)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(t) Answer: 
+\begin_inset Formula $List$
+\end_inset
+
+ 
+\series default
+makes one call to 
+\begin_inset Formula $LCA$
+\end_inset
+
+ and one call to 
+\begin_inset Formula $Node-List$
+\end_inset
+
+.
+ As show in parts (r) and (s), these take 
+\begin_inset Formula $O(log_{2}N)+O(L)$
+\end_inset
+
+ in total.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(u) Answer: 
+\series default
+First observe that 
+\begin_inset Formula $LCA$
+\end_inset
+
+ is guaranteed to terminate in 
+\begin_inset Formula $O(log_{2}N)$
+\end_inset
+
+ steps, because it descends one level in the 
+\begin_inset Formula $AVL$
+\end_inset
+
+ tree at every step.
+ Now assume that a non-empty set of nodes exist whose key values are between
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ The loop condition guarantees that the node returned is the highest node
+ in this set.
+ Call this node 
+\begin_inset Formula $n_{R}$
+\end_inset
+
+.
+ This implies that nodes with values 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ are located in left and right subtrees of the subtree rooted at 
+\begin_inset Formula $n_{R}$
+\end_inset
+
+.
+ Thefefore, any lower node in the tree cannot be a common ancestor of nodes
+ with values 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula $n_{R}$
+\end_inset
+
+ is in fact the 
+\begin_inset Formula $lowest$
+\end_inset
+
+ common ancestor of nodes with values 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now assume there are no nodes with key values between 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ If no node in the tree satistfies the condition in the until block, 
+\begin_inset Formula $LCA$
+\end_inset
+
+ will traverse left down the tree until it reaches a leaf, at which point
+ it returns 
+\begin_inset Formula $null$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problem 3-2
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a) Answer: 
+\series default
+intersects has the highest CPU usage.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) Answer: 
+\series default
+intersects is called 187590314 times.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c) Answer: 
+\series default
+1 and 2.
+ Left and right endpoints of horizontal wires are points of interest.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d) Answer: 
+\series default
+1.
+ Wires are added to the range index when the sweep line intersects their
+ left endpoint.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(e) Answer: 
+\series default
+2.
+ Wires are removed from the range index when the sweep line reaches their
+ right endpoint.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(f) Answer: 
+\series default
+4.
+ Nothing happens.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(g) Answer: 
+\series default
+3.
+ A range index query is performed.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(h) Answer: 
+\series default
+2.
+ Horizontal wires are added to the range index when the sweep line hits
+ their left endpoing, and removed when the sweep line hits their right endpoint.
+ Given that the sweep line moves from left to right, a horizontal line is
+ in the range index for if and only if the sweep line is currently intersecting
+ the horizontal line.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(i) Answer: 
+\series default
+The y coordinate 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ is added as the key in the KeyWirePairs.
 \end_layout
 
 \end_body
