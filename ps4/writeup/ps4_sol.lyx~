@@ -1,0 +1,369 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%
+% 6.006 problem set 2
+%
+
+
+\input{macros}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{clrscode3e}
+
+
+\newcommand{\answer}{
+ \par\medskip
+ \textbf{Answer:}
+}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+\newcommand{\theproblemsetnum}{4}
+\newcommand{\releasedate}{September 29, 2011}
+\newcommand{\partaduedate}{Tuesday, October 7}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+handout
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Problem Set 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+theproblemsetnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+releasedate
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hrulefill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problem 4-1
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a) Answer: 
+\series default
+Allysa's protocol will result in more collisions than in simple uniform
+ hashing, because several permutations of the same characters or words will
+ result in the same hash value.
+ For example, 
+\begin_inset Quotes eld
+\end_inset
+
+Man bites dog
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Dog bites man
+\begin_inset Quotes erd
+\end_inset
+
+ will hash to the same value.
+ Answer is 3.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) Answer: 
+\series default
+To ensure performance and correctness you need both collision resolution
+ and dynamic table resizing.
+ Dynamic resizing maintains performance by keeping the expected number of
+ collisions at 
+\begin_inset Formula $O(1)$
+\end_inset
+
+.
+ But collision resolution is still necessary to ensure correctness when
+ collisions do occur.
+ Answer is 4.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c) Answer: 
+\series default
+Allocating space for new table of size 
+\begin_inset Formula $m'$
+\end_inset
+
+ is 
+\begin_inset Formula $\theta(m')$
+\end_inset
+
+.
+ Rehashing existing keys into new table requires looping through 
+\begin_inset Formula $m$
+\end_inset
+
+ tables entries that contain 
+\begin_inset Formula $n$
+\end_inset
+
+ keys in total, which takes 
+\begin_inset Formula $\theta(m+n)$
+\end_inset
+
+.
+ Total time is therefore 
+\begin_inset Formula $\theta(m+m'+n)$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $m'>m$
+\end_inset
+
+, this simplifies to 
+\begin_inset Formula $\theta(m'+n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(d) Answer: 
+\series default
+This is an improvement over re-sizing the table with every update, but the
+ number of updates for a table of size 
+\begin_inset Formula $n$
+\end_inset
+
+ is till 
+\begin_inset Formula $O(n/k)=O(n)$
+\end_inset
+
+, and total costs are still 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+, because 
+\begin_inset Formula $\sum_{i=0modk}^{n}i=\frac{n}{k}\cdot\frac{n}{2}=O(n^{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problem 4-2
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(a) Answer: 
+\series default
+This use case calls for the initial creation of a table, followed (mostly)
+ by lookups.
+ Answer is 1.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(b) Answer: 
+\series default
+Dictionaries for membership testing can be of 
+\begin_inset Quotes eld
+\end_inset
+
+any size
+\begin_inset Quotes erd
+\end_inset
+
+, so a large minimum size could potentially waste a lot of room for small
+ tables.
+ A growth rate of 2 - table doubling - can realize performance gains in
+ a base-2 architecture, so answer is 2 - a small minimum size and a growth
+ rate of 2.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(c) Answer: 
+\end_layout
+
+\end_body
+\end_document
